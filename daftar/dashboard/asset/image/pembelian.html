@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pembelian</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- CSS & Font -->
+    <link rel="stylesheet" href="asset/style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <img
+          class="dekorasi d-none d-md-block"
+          src="Asset/image/navbar.png"
+          alt="Kahuripan"
+        />
+        <a class="logo navbar-brand" href="#">
+          <img class="logo-brand" src="Asset/image/logo.png" alt="Kahuripan" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="#"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="#"
+              >
+                Tentang Kami
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="#"
+              >
+                Menu
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="#"
+              >
+                Reservasi
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="#"
+              >
+                Hubungi Kami
+              </a>
+            </li>
+          </ul>
+          <button class="btn btnlogo"><i class="bi bi-cart"></i></button>
+          <img src="asset/image/org.png" alt="" style="width: 4%;" />
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- Form -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="row form-beli p-3">
+          <div class="col-lg-6 mt-2">
+            <div>
+              <p>
+                <strong>Data Pemesan</strong>
+                (Punya akun?
+                <a href="#" class="text-danger">Masuk)</a>
+              </p>
+            </div>
+            <div class="mb-3 row">
+              <label
+                for="inputPassword"
+                class="col-sm-2 col-form-label text-danger"
+              >
+                Nama
+              </label>
+              <div class="col-sm-10">
+                <input type="Name" class="form-control" id="inputPassword" />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label
+                for="inputPassword"
+                class="col-sm-2 col-form-label text-danger"
+              >
+                Email
+              </label>
+              <div class="col-sm-10">
+                <input type="Name" class="form-control" id="inputPassword" />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label
+                for="inputPassword"
+                class="col-sm-2 col-form-label text-danger"
+              >
+                Nomer HP
+              </label>
+              <div class="col-sm-10">
+                <input type="Name" class="form-control" id="inputPassword" />
+              </div>
+            </div>
+            <div>
+              <p class="fw-semibold">
+                Metode Pembayaran
+              </p>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Shoppe Pay
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                  checked
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Bank Transfer
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault3"
+                  checked
+                />
+                <label class="form-check-label" for="flexRadioDefault3">
+                  Gopay
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 form-detail mt-2">
+            <div>
+              <p class="fw-semibold">
+                Detail Pengiriman
+              </p>
+            </div>
+            <div class="mb-3 row">
+              <label
+                for="inputPassword"
+                class="col-sm-2 col-form-label text-danger"
+                style="font-size: 12px;"
+              >
+                Tanggal Penghantaran
+              </label>
+              <div class="col-sm-10">
+                <input type="Name" class="form-control" id="inputPassword" />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label
+                for="inputPassword"
+                class="col-sm-2 col-form-label text-danger"
+                style="font-size: 12px;"
+              >
+                Jam Penghantaran
+              </label>
+              <div class="col-sm-10">
+                <input type="Name" class="form-control" id="inputPassword" />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label
+                for="inputPassword"
+                class="col-sm-2 col-form-label text-danger"
+                style="font-size: 12px;"
+              >
+                Area Penghantaran
+              </label>
+              <div class="col-sm-10">
+                <input type="Name" class="form-control" id="inputPassword" />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label
+                for="inputPassword"
+                class="col-sm-2 col-form-label text-danger"
+                style="font-size: 12px;"
+              >
+                Detail Alamat Penghantaran
+              </label>
+              <div class="form-floating col-sm-10">
+                <textarea
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  id="floatingTextarea2"
+                  style="height: 100px; font-size: 12px;"
+                ></textarea>
+                <label for="floatingTextarea2"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <div class="container">
+        <div class="row" style="border: 1px solid #eee; border-radius: 10px;">
+          <div class="col">
+            <p class="fs-4 fw-bold">
+              Pesanan
+            </p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Nama Pesanan</th>
+                  <th scope="col">Jumlah</th>
+                  <th scope="col">Harga Satuan</th>
+                  <th scope="col">Sub Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="">
+                    <div
+                      class="card-cart justify-content-center p-3 rounded-4"
+                      style="max-width: fit-content;"
+                    >
+                      <img
+                        src="asset/image/makanan6.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div>
+                        <p
+                          class="fw-semibold fs-5 mt-2"
+                          style="margin-bottom: 0px;"
+                        >
+                          Bakmie Goreng
+                        </p>
+                        <img
+                          src="asset/image/start.png"
+                          alt=""
+                          style="width: 84px;"
+                        />
+                        <p
+                          class="fw-light"
+                          style="font-size: small; color: #6d6d6d;"
+                        >
+                          Lobortis mauris tempus nibh lacus duis amet. Velit
+                          <br />
+                          donec tellus id dui et urna, laoreet. Potenti quis
+                        </p>
+                      </div>
+                    </div>
+                  </th>
+                  <td>30</td>
+                  <td>Rp 15.000</td>
+                  <td>Rp 787.000</td>
+                </tr>
+              </tbody>
+            </table>
+            <span class="d-flex">
+              <p class="fw-light" style="font-size: small; color: #6d6d6d;">
+                sambalnya diperbanyak ya mas
+              </p>
+
+              <a
+                href=""
+                class="fw-light ms-3"
+                style="font-size: small; color: #ff0000;"
+              >
+                Ubah
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Form -->
+
+    <!-- footer -->
+    <footer class="page-footer font-small blue mt-5">
+      <div class="container text-md-left">
+        <div class="row">
+          <div class="col-md-6 mt-md-0 mt-3 address mb-5">
+            <img src="asset/image/logo.png" alt="logo" class="img-fluid mb-5" />
+            <p class="isi1">
+              Lobortis mauris tempus nibh lacus duis amet. Velit donec tellus id
+              dui et urna, laoreet. Potenti quis
+            </p>
+            <div class="mt-md-5 social-media">
+              <a href="#">
+                <img
+                  src="Asset/image/instagram.png"
+                  alt="linkedin"
+                  class="img-fluid"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="Asset/image/facebook.png"
+                  alt="facebook"
+                  class="img-fluid"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="Asset/image/twiter.png"
+                  alt="twitter"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="row col-md-6 nav-footer" style="border: 1px black;">
+            <div class="col-md-4 mb-md-0 mb-3">
+              <p>
+                Informasi
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-3">
+              <p>
+                Bantuan
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-3">
+              <p>
+                Menu Lainya
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      feather.replace()
+    </script>
+    <script src="asset/style/main.js" type="text/javascript"></script>
+    <script src="node_modules/bootstrap-input-spinner/src/bootstrap-input-spinner.js"></script>
+    <script>
+      $("input[type='number']").inputSpinner()
+    </script>
+  </body>
+</html>

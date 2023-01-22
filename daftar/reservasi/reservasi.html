@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reservasi</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- CSS & Font -->
+    <link rel="stylesheet" href="asset/style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container bg-white">
+        <img
+          class="dekorasi d-none d-md-block"
+          src="asset/image/navbar.png"
+          alt="Kahuripan"
+        />
+        <a class="logo navbar-brand" href="#">
+          <img class="logo-brand" src="asset/image/logo.png" alt="Kahuripan" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="../Home/Home.html"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="../Home/Home.html#tentangx"
+              >
+                Tentang Kami
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="../menu/menu.html"
+              >
+                Menu
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="#"
+              >
+                Reservasi
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="#footer"
+              >
+                Hubungi Kami
+              </a>
+            </li>
+          </ul>
+          <a href="../menu/keranjang.html">
+
+            <button class="btn btnlogo"><i class="bi bi-cart"></i></button>
+          </a>
+          <a href="../Daftar.html">
+
+            <button class="btn btnku1" type="submit">Daftar</button>
+          </a>
+          <a href="../../login.html">
+
+            <button class="btn btnku2" type="submit">Masuk</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- Form -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="row form-beli p-3">
+          <div class="col-lg-6 mt-2">
+            <div>
+              <p>
+                <strong>Data Pemesan</strong>
+                (Punya akun?)
+                <a href="../../login.html" class="text-danger">Masuk</a>
+              </p>
+            </div>
+            <div class="mb-3 row">
+              <label
+                for="inputPassword"
+                class="col-sm-2 col-form-label text-danger"
+              >
+                Nama
+              </label>
+              <div class="col-sm-10">
+                <input type="Name" class="form-control" id="inputPassword" />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label
+                for="inputPassword"
+                class="col-sm-2 col-form-label text-danger"
+              >
+                Email
+              </label>
+              <div class="col-sm-10">
+                <input type="Name" class="form-control" id="inputPassword" />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label
+                for="inputPassword"
+                class="col-sm-2 col-form-label text-danger"
+              >
+                Nomer HP
+              </label>
+              <div class="col-sm-10">
+                <input type="Name" class="form-control" id="inputPassword" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 form-detail mt-2">
+            <div>
+              <p class="fw-semibold mt-3">
+                Detail Reservasi
+              </p>
+              <hr />
+            </div>
+            <div class="mb-3 row">
+              <label
+                for="inputPassword"
+                class="col-sm-2 col-form-label text-danger"
+                style="font-size: 12px;"
+              >
+                Tanggal Reservasi
+              </label>
+              <div class="col-sm-10">
+                <input
+                  type="Name"
+                  class="form-control"
+                  id="inputPassword"
+                  placeholder="DD/MM/YY"
+                />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label
+                for="inputPassword"
+                class="col-sm-2 col-form-label text-danger"
+                style="font-size: 12px;"
+              >
+                Jam Reservasi
+              </label>
+              <div class="col-sm-10">
+                <input
+                  type="Name"
+                  class="form-control"
+                  id="inputPassword"
+                  placeholder="00.00 WIB"
+                />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label
+                for="inputPassword"
+                class="col-sm-2 col-form-label text-danger"
+                style="font-size: 12px;"
+              >
+                Jumlah Tamu
+              </label>
+              <div class="col-sm-10">
+                <input
+                  type="Name"
+                  class="form-control"
+                  id="inputPassword"
+                  placeholder="Isi Jumlah Tamu"
+                />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label
+                for="inputPassword"
+                class="col-sm-2 col-form-label text-danger"
+                style="font-size: 12px;"
+              >
+                Menu
+              </label>
+
+              <div class="col-sm-10">
+                <a href="../menu/menu2.html">
+                  <input
+                  type="Name"
+                  class="form-control"
+                  id="inputPassword"
+                  placeholder="Pilih Menu"
+                  style="cursor: pointer;"
+                  />
+                </a>
+              </div>
+              <div class="d-flex justify-content-start mt-2 text-danger">
+                <div class="form-floating" style="margin-left: 6rem;">
+                        <textarea
+                          class="form-control"
+                          placeholder="Leave a comment here"
+                          id="floatingTextarea"
+                          style="border: none; height: 70px; width: fit-content;"
+                        ></textarea>
+                        <label for="floatingTextarea" style="color: #A90139;">
+                          <img src="asset/image/edit.svg" style="height: 18px;"></img>
+                          Tambah Catatan
+                        </label>
+                </div>      
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <sectin class="m-5">
+      <div class="container justify-content-center text-center">
+        <div class="row">
+          <div class="col">
+            <a href="../menu/menu.html">
+
+              <div class="btn btn-danger btn-lg w-50 rounded-5">
+                Reservasi
+              </div>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+    </sectin>
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <img src="..." class="rounded me-2" alt="...">
+    <strong class="me-auto">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+  </div>
+</div>
+    <!-- End Form -->
+
+    <!-- footer -->
+    <footer class="page-footer font-small blue" id="footer">
+      <div class="container text-md-left">
+        <div class="row">
+          <div class="col-md-6 mt-md-0 mt-3 address mb-5">
+            <img src="asset/image/logo.png" alt="logo" class="img-fluid mb-5" />
+            <p class="isi1">
+              Lobortis mauris tempus nibh lacus duis amet. Velit donec tellus id
+              dui et urna, laoreet. Potenti quis
+            </p>
+            <div class="mt-md-5 social-media">
+              <a href="#">
+                <img
+                  src="asset/image/instagram.png"
+                  alt="linkedin"
+                  class="img-fluid"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="asset/image/facebook.png"
+                  alt="facebook"
+                  class="img-fluid"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="asset/image/twiter.png"
+                  alt="twitter"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="row col-md-6 nav-footer" style="border: 1px black;">
+            <div class="col-md-4 mb-md-0 mb-3">
+              <p>
+                Informasi
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-3">
+              <p>
+                Bantuan
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-3">
+              <p>
+                Menu Lainya
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end footer -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script>
+      feather.replace()
+    </script>
+     
+  </body>
+</html>

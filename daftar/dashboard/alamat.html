@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alamat</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- CSS & Font -->
+    <link rel="stylesheet" href="asset/style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <img
+          class="dekorasi d-none d-md-block"
+          src="asset/image/navbar.png"
+          alt="Kahuripan"
+        />
+        <a class="logo navbar-brand" href="#">
+          <img class="logo-brand" src="asset/image/logo.png" alt="Kahuripan" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="../Home/Home.html"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="../Home/Home.html#tentang"
+              >
+                Tentang Kami
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="../menu/menu.html"
+              >
+                Menu
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="../reservasi/reservasi.html"
+              >
+                Reservasi
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="#footer"
+              >
+                Hubungi Kami
+              </a>
+            </li>
+          </ul>
+          <a href="../menu/keranjang.html">
+            <button class="btn btnlogo"><i class="bi bi-cart"></i></button>
+          </a>
+          <a href="dashboard.html">
+            <button class="btn" type="submit">
+              <img class="foto" src="asset/image/profile.png" alt="" />
+            </button>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- Profile -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="rwo">
+          <div class="col">
+            <div class="card">
+              <div class="bg-white p-3">
+                <div class="row">
+                  <div class="col-md-3">
+                    <a href="dashboard.html">
+                      <p class="fw-semibold f-6 p-3 text-center">
+                        Data Diri
+                      </p>
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <p
+                      class="fw-semibold f-6 text-danger text-center p-3"
+                      style="border-bottom: 2px solid;"
+                    >
+                      Daftar Alamat
+                    </p>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="pesanan.html">
+                      <p class="fw-semibold f-6 p-3">
+                        Status Pesanan
+                      </p>
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="keamanan.html">
+                      <p class="fw-semibold f-6 p-3">
+                        Pengaturan Keamanan
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="row p-3">
+                  <div class="col-md">
+                    <div class="d-flex flex-row-reverse">
+                      <div
+                        class="btn btn-danger btn-md"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                      >
+                        Tambah Alamat
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="staticBackdrop"
+                      data-bs-backdrop="static"
+                      data-bs-keyboard="false"
+                      tabindex="-1"
+                      aria-labelledby="staticBackdropLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header border-0">
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body border-0">
+                            <h1
+                              class="modal-title fs-5 text-center"
+                              id="staticBackdropLabel"
+                            >
+                              Ubah Alamat
+                            </h1>
+                            <div class="mb-1">
+                              <label
+                                for="exampleFormControlInput1"
+                                class="form-label"
+                              >
+                                Label ALamat
+                              </label>
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="exampleFormControlInput1"
+                              />
+                              <div class="d-flex flex-row-reverse">
+                                <p class="fw-lighter">0/50</p>
+                              </div>
+                            </div>
+                            <div class="mb-1">
+                              <label
+                                for="exampleFormControlTextarea1"
+                                class="form-label"
+                              >
+                                Alamat Lengkap
+                              </label>
+                              <textarea
+                                class="form-control"
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                              ></textarea>
+                              <div class="d-flex flex-row-reverse">
+                                <p class="fw-lighter">0/200</p>
+                              </div>
+                            </div>
+                            <div class="mb-1">
+                              <label
+                                for="exampleFormControlInput1"
+                                class="form-label"
+                              >
+                                Nama Penerima
+                              </label>
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="exampleFormControlInput1"
+                              />
+                              <div class="d-flex flex-row-reverse">
+                                <p class="fw-lighter">0/50</p>
+                              </div>
+                            </div>
+                            <div class="mb-1">
+                              <label
+                                for="exampleFormControlInput1"
+                                class="form-label"
+                              >
+                                Nomor HP
+                              </label>
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="exampleFormControlInput1"
+                              />
+                            </div>
+                            <div class="text-center">
+                              <p class="fw-normal" style="font-size: 10px;">
+                                Dengan klik “SImpan”, anda menyetujui
+                                <b class="text-danger" style="cursor: pointer;">
+                                  Syarat & Ketentuan.
+                                </b>
+                              </p>
+                            </div>
+                          </div>
+
+                          <div
+                            class="modal-footer border-0 justify-content-center"
+                          >
+                            <button
+                              type="button"
+                              class="btn btn-danger"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              Simpan
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Modal -->
+
+                    <div
+                      class="row rounded-4 p-3 mt-3"
+                      style="
+                        border: 2px solid #a80038;
+                        background-color: rgba(168, 0, 56, 0.1);
+                      "
+                    >
+                      <div class="col-md-8">
+                        <div class="d-flex">
+                          <p class="fw-bold fs-6">Rumah</p>
+                          <p
+                            class="fw-lighter ms-2 p-1"
+                            style="
+                              height: 20px;
+                              background-color: #e2e2e2;
+                              font-size: 12px;
+                              border-radius: 8px;
+                            "
+                          >
+                            Utama
+                          </p>
+                        </div>
+                        <p class="fw-bold fs-6">Ahun Ismi Aziz</p>
+                        <p class="fw-normal fs-6">08374837492780</p>
+                        <p class="fw-normal fs-6 mb-5">
+                          Jl. Ir H. Juanda No.95, Cemp. Putih, Kec. Ciputat
+                          Tim....
+                        </p>
+                        <p
+                          class="fw-bold fs-6 text-danger"
+                          style="cursor: pointer;"
+                          data-bs-toggle="modal"
+                          data-bs-target="#staticBackdrop"
+                        >
+                          Ubah Alamat
+                        </p>
+                      </div>
+                      <div
+                        class="col-md-4 position-relative d-flex flex-row-reverse"
+                      >
+                        <i
+                          data-feather="check"
+                          class="text-danger position-absolute top-50 end-0 translate-middle-y"
+                        ></i>
+                      </div>
+                    </div>
+
+                    <div
+                      class="row rounded-4 p-3 mt-3"
+                      style="box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);"
+                    >
+                      <div class="col-md-8">
+                        <div class="d-flex">
+                          <p class="fw-bold fs-6">Rumah</p>
+                          <p
+                            class="fw-lighter ms-2 p-1"
+                            style="
+                              height: 20px;
+                              background-color: #e2e2e2;
+                              font-size: 12px;
+                              border-radius: 8px;
+                            "
+                          >
+                            Utama
+                          </p>
+                        </div>
+                        <p class="fw-bold fs-6">Ahun Ismi Aziz</p>
+                        <p class="fw-normal fs-6">08374837492780</p>
+                        <p class="fw-normal fs-6 mb-5">
+                          Jl. Ir H. Juanda No.95, Cemp. Putih, Kec. Ciputat
+                          Tim....
+                        </p>
+                        <p
+                          class="fw-bold fs-6 text-danger"
+                          style="cursor: pointer;"
+                          data-bs-toggle="modal"
+                          data-bs-target="#staticBackdrop"
+                        >
+                          Ubah Alamat
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Profile -->
+
+    <!-- footer -->
+    <footer class="page-footer font-small blue mt-5">
+      <div class="container text-md-left">
+        <div class="row">
+          <div class="col-md-6 mt-md-0 mt-3 address mb-5">
+            <img src="asset/image/logo.png" alt="logo" class="img-fluid mb-5" />
+            <p class="isi1">
+              Lobortis mauris tempus nibh lacus duis amet. Velit donec tellus id
+              dui et urna, laoreet. Potenti quis
+            </p>
+            <div class="mt-md-5 social-media">
+              <a href="#">
+                <img
+                  src="Asset/image/instagram.png"
+                  alt="linkedin"
+                  class="img-fluid"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="Asset/image/facebook.png"
+                  alt="facebook"
+                  class="img-fluid"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="Asset/image/twiter.png"
+                  alt="twitter"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="row col-md-6 nav-footer" style="border: 1px black;">
+            <div class="col-md-4 mb-md-0 mb-3">
+              <p>
+                Informasi
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-3">
+              <p>
+                Bantuan
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-3">
+              <p>
+                Menu Lainya
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end footer -->
+
+    <script>
+      // When the user clicks on div, open the popup
+      function myFunction() {
+        var popup = document.getElementById('ini')
+        popup.classList.toggle('show')
+      }
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      feather.replace()
+    </script>
+    <script src="asset/style/main.js" type="text/javascript"></script>
+    <script src="node_modules/bootstrap-input-spinner/src/bootstrap-input-spinner.js"></script>
+    <script>
+      $("input[type='number']").inputSpinner()
+    </script>
+  </body>
+</html>

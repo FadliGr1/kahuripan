@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap");
+
+/* Login / Reservasi*/
+.login {
+  background-image: url("../img/bg_login.png");
+  font-family: "Outfit", sans-serif !important;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 576px) {
+  .login {
+    background-image: none;
+  }
+}
+
+.btn-login {
+  background-color: #a80038;
+  color: #fff;
+}
+
+.btn-login:hover {
+  background-color: #b8164c;
+  color: #fff;
+}
+/* End Login / Reservasi*/

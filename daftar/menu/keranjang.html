@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Keranjang</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- CSS & Font -->
+    <link rel="stylesheet" href="asset/style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <img
+          class="dekorasi d-none d-md-block"
+          src="asset/image/navbar.png"
+          alt="Kahuripan"
+        />
+        <a class="logo navbar-brand" href="#">
+          <img class="logo-brand" src="asset/image/logo.png" alt="Kahuripan" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="../Home/Home.html"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="../Home/Home.html#tentang"
+              >
+                Tentang Kami
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="../menu/menu.html"
+              >
+                Menu
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="../reservasi/reservasi.html"
+              >
+                Reservasi
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-white nav-link active"
+                aria-current="page"
+                href="#footer"
+              >
+                Hubungi Kami
+              </a>
+            </li>
+          </ul>
+          
+          <a href="../menu/keranjang.html">
+            <button class="btn btnlogo"><i class="bi bi-cart"></i></button>
+          </a>
+          <a href="../dashboard/dashboard.html">
+            <button class="btn" type="submit">
+              <img class="foto" src="asset/image/profile.png" alt="" />
+            </button>
+          </a>
+
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- menu -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-8">
+            <table class="table bg-white">
+              <thead>
+                <tr>
+                  <th scope="col-md-5">
+                    <div>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="checkboxNoLabel"
+                        value=""
+                        aria-label="..."
+                      />
+                    
+                    </div>
+                  </th>
+                  <th scope="col" class="fw-semibold">Pilih Semua</th>
+                  <th scope="col" class="fw-semibold text-danger">
+                    <a href="#">Hapus</a>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="col">
+                    <div>
+                      <input
+                        class="form-check-input fw-light"
+                        type="checkbox"
+                        id="checkboxNoLabel"
+                        value=""
+                        aria-label="..."
+                      />
+                    </div>
+                  </th>
+                  <th scope="col">
+                    <div class="row justify-content-center mb-3">
+                      <div class="col-md-12 col-xl-10">
+                        <div class="card-atas shadow-0 border-0 rounded-5">
+                          <div class="card-body">
+                            <div class="row">
+                              <div
+                                class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0"
+                              >
+                                <div
+                                  class="bg-image hover-zoom ripple rounded ripple-surface"
+                                >
+                                  <img
+                                    src="asset/image/nasgor.png"
+                                    class="w-100"
+                                  />
+                                  <a href="#!">
+                                    <div class="hover-overlay">
+                                      <div
+                                        class="mask"
+                                        style="
+                                          background-color: rgba(
+                                            253,
+                                            253,
+                                            253,
+                                            0.15
+                                          );
+                                        "
+                                      ></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+  
+                              <div class="col-md col-lg col-xl">
+                                <h2 class="fw-bold">Nasi Lele Goreng</h2>
+  
+                                <p class="mb-4 mb-md-0 fw-lighter fs-6">
+                                  Lobortis mauris tempus nibh lacus duis amet.
+                                  Velit donec tellus id dui et urna, laoreet.
+                                  Potenti quis Lobortis mauris tempus nibh lacus
+                                  duis amet.
+                                </p>
+                                <div class="d-flex flex-row mt-2">
+                                  <img
+                                    src="asset/image/start.png"
+                                    alt=""
+                                    style="width: 30%;"
+                                  />
+                                </div>
+                                <h4 class="fw-bold">Rp 15.000</h4>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-floating">
+                                    <textarea
+                                      class="form-control"
+                                      placeholder="Leave a comment here"
+                                      id="floatingTextarea"
+                                      style="border: none; height: 100px; width: fit-content;"
+                                    ></textarea>
+                                    <label for="floatingTextarea" style="color: #A90139;">
+                                      <img src="asset/image/edit.svg" style="height: 18px;">Tambah Catatan</img>
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 mt-lg-2 mt-sm-2">
+                                  <div class="row">
+  
+                                    <span class="d-flex">
+                                      <i data-feather="trash-2" class="mt-1 me-2"></i>
+                                      <input type="number" value="1" min="0" max="100" step="1" style="width: 10px"/>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+  
+                <tr>
+                  <th scope="col">
+                    <div>
+                      <input
+                        class="form-check-input fw-light"
+                        type="checkbox"
+                        id="checkboxNoLabel"
+                        value=""
+                        aria-label="..."
+                      />
+                    </div>
+                  </th>
+                  <th scope="col">
+                    <div class="row justify-content-center mb-3">
+                      <div class="col-md-12 col-xl-10">
+                        <div class="card-atas shadow-0 border-0 rounded-5">
+                          <div class="card-body">
+                            <div class="row">
+                              <div
+                                class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0"
+                              >
+                                <div
+                                  class="bg-image hover-zoom ripple rounded ripple-surface"
+                                >
+                                  <img
+                                    src="asset/image/nasgor.png"
+                                    class="w-100"
+                                  />
+                                  <a href="#!">
+                                    <div class="hover-overlay">
+                                      <div
+                                        class="mask"
+                                        style="
+                                          background-color: rgba(
+                                            253,
+                                            253,
+                                            253,
+                                            0.15
+                                          );
+                                        "
+                                      ></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+  
+                              <div class="col-md col-lg col-xl">
+                                <h2 class="fw-bold">Nasi Lele Goreng</h2>
+  
+                                <p class="mb-4 mb-md-0 fw-lighter fs-6">
+                                  Lobortis mauris tempus nibh lacus duis amet.
+                                  Velit donec tellus id dui et urna, laoreet.
+                                  Potenti quis Lobortis mauris tempus nibh lacus
+                                  duis amet.
+                                </p>
+                                <div class="d-flex flex-row mt-2">
+                                  <img
+                                    src="asset/image/start.png"
+                                    alt=""
+                                    style="width: 30%;"
+                                  />
+                                </div>
+                                <h4 class="fw-bold">Rp 15.000</h4>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-floating">
+                                    <textarea
+                                      class="form-control"
+                                      placeholder="Leave a comment here"
+                                      id="floatingTextarea"
+                                      style="border: none; height: 100px; width: fit-content;"
+                                    ></textarea>
+                                    <label for="floatingTextarea" style="color: #A90139;">
+                                      <img src="asset/image/edit.svg" style="height: 18px;">Tambah Catatan</img>
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 mt-lg-2 mt-sm-2">
+                                  <div class="row">
+  
+                                    <span class="d-flex">
+                                      <i data-feather="trash-2" class="mt-1 me-2"></i>
+                                      <input type="number" value="1" min="0" max="100" step="1" style="width: 10px"/>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+  
+                <tr>
+                  <th scope="col">
+                    <div>
+                      <input
+                        class="form-check-input fw-light"
+                        type="checkbox"
+                        id="checkboxNoLabel"
+                        value=""
+                        aria-label="..."
+                      />
+                    </div>
+                  </th>
+                  <th scope="col">
+                    <div class="row justify-content-center mb-3">
+                      <div class="col-md-12 col-xl-10">
+                        <div class="card-atas shadow-0 border-0 rounded-5">
+                          <div class="card-body">
+                            <div class="row">
+                              <div
+                                class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0"
+                              >
+                                <div
+                                  class="bg-image hover-zoom ripple rounded ripple-surface"
+                                >
+                                  <img
+                                    src="asset/image/nasgor.png"
+                                    class="w-100"
+                                  />
+                                  <a href="#!">
+                                    <div class="hover-overlay">
+                                      <div
+                                        class="mask"
+                                        style="
+                                          background-color: rgba(
+                                            253,
+                                            253,
+                                            253,
+                                            0.15
+                                          );
+                                        "
+                                      ></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+  
+                              <div class="col-md col-lg col-xl">
+                                <h2 class="fw-bold">Nasi Lele Goreng</h2>
+  
+                                <p class="mb-4 mb-md-0 fw-lighter fs-6">
+                                  Lobortis mauris tempus nibh lacus duis amet.
+                                  Velit donec tellus id dui et urna, laoreet.
+                                  Potenti quis Lobortis mauris tempus nibh lacus
+                                  duis amet.
+                                </p>
+                                <div class="d-flex flex-row mt-2">
+                                  <img
+                                    src="asset/image/start.png"
+                                    alt=""
+                                    style="width: 30%;"
+                                  />
+                                </div>
+                                <h4 class="fw-bold">Rp 15.000</h4>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-floating">
+                                    <textarea
+                                      class="form-control"
+                                      placeholder="Leave a comment here"
+                                      id="floatingTextarea"
+                                      style="border: none; height: 100px; width: fit-content;"
+                                    ></textarea>
+                                    <label for="floatingTextarea" style="color: #A90139;">
+                                      <img src="asset/image/edit.svg" style="height: 18px;">Tambah Catatan</img>
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 mt-lg-2 mt-sm-2">
+                                  <div class="row">
+  
+                                    <span class="d-flex">
+                                      <i data-feather="trash-2" class="mt-1 me-2"></i>
+                                      <input type="number" value="1" min="0" max="100" step="1" style="width: 10px"/>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+  
+                <tr>
+                  <th scope="col">
+                    <div>
+                      <input
+                        class="form-check-input fw-light"
+                        type="checkbox"
+                        id="checkboxNoLabel"
+                        value=""
+                        aria-label="..."
+                      />
+                    </div>
+                  </th>
+                  <th scope="col">
+                    <div class="row justify-content-center mb-3">
+                      <div class="col-md-12 col-xl-10">
+                        <div class="card-atas shadow-0 border-0 rounded-5">
+                          <div class="card-body">
+                            <div class="row">
+                              <div
+                                class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0"
+                              >
+                                <div
+                                  class="bg-image hover-zoom ripple rounded ripple-surface"
+                                >
+                                  <img
+                                    src="asset/image/nasgor.png"
+                                    class="w-100"
+                                  />
+                                  <a href="#!">
+                                    <div class="hover-overlay">
+                                      <div
+                                        class="mask"
+                                        style="
+                                          background-color: rgba(
+                                            253,
+                                            253,
+                                            253,
+                                            0.15
+                                          );
+                                        "
+                                      ></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+  
+                              <div class="col-md col-lg col-xl">
+                                <h2 class="fw-bold">Nasi Lele Goreng</h2>
+  
+                                <p class="mb-4 mb-md-0 fw-lighter fs-6">
+                                  Lobortis mauris tempus nibh lacus duis amet.
+                                  Velit donec tellus id dui et urna, laoreet.
+                                  Potenti quis Lobortis mauris tempus nibh lacus
+                                  duis amet.
+                                </p>
+                                <div class="d-flex flex-row mt-2">
+                                  <img
+                                    src="asset/image/start.png"
+                                    alt=""
+                                    style="width: 30%;"
+                                  />
+                                </div>
+                                <h4 class="fw-bold">Rp 15.000</h4>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-floating">
+                                    <textarea
+                                      class="form-control"
+                                      placeholder="Leave a comment here"
+                                      id="floatingTextarea"
+                                      style="border: none; height: 100px; width: fit-content;"
+                                    ></textarea>
+                                    <label for="floatingTextarea" style="color: #A90139;">
+                                      <img src="asset/image/edit.svg" style="height: 18px;">Tambah Catatan</img>
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 mt-lg-2 mt-sm-2">
+                                  <div class="row">
+  
+                                    <span class="d-flex">
+                                      <i data-feather="trash-2" class="mt-1 me-2"></i>
+                                      <input type="number" value="1" min="0" max="100" step="1" style="width: 10px"/>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+  
+                <tr>
+                  <th scope="col">
+                    <div>
+                      <input
+                        class="form-check-input fw-light"
+                        type="checkbox"
+                        id="checkboxNoLabel"
+                        value=""
+                        aria-label="..."
+                      />
+                    </div>
+                  </th>
+                  <th scope="col">
+                    <div class="row justify-content-center mb-3">
+                      <div class="col-md-12 col-xl-10">
+                        <div class="card-atas shadow-0 border-0 rounded-5">
+                          <div class="card-body">
+                            <div class="row">
+                              <div
+                                class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0"
+                              >
+                                <div
+                                  class="bg-image hover-zoom ripple rounded ripple-surface"
+                                >
+                                  <img
+                                    src="asset/image/nasgor.png"
+                                    class="w-100"
+                                  />
+                                  <a href="#!">
+                                    <div class="hover-overlay">
+                                      <div
+                                        class="mask"
+                                        style="
+                                          background-color: rgba(
+                                            253,
+                                            253,
+                                            253,
+                                            0.15
+                                          );
+                                        "
+                                      ></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+  
+                              <div class="col-md col-lg col-xl">
+                                <h2 class="fw-bold">Nasi Lele Goreng</h2>
+  
+                                <p class="mb-4 mb-md-0 fw-lighter fs-6">
+                                  Lobortis mauris tempus nibh lacus duis amet.
+                                  Velit donec tellus id dui et urna, laoreet.
+                                  Potenti quis Lobortis mauris tempus nibh lacus
+                                  duis amet.
+                                </p>
+                                <div class="d-flex flex-row mt-2">
+                                  <img
+                                    src="asset/image/start.png"
+                                    alt=""
+                                    style="width: 30%;"
+                                  />
+                                </div>
+                                <h4 class="fw-bold">Rp 15.000</h4>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-floating">
+                                    <textarea
+                                      class="form-control"
+                                      placeholder="Leave a comment here"
+                                      id="floatingTextarea"
+                                      style="border: none; height: 100px; width: fit-content;"
+                                    ></textarea>
+                                    <label for="floatingTextarea" style="color: #A90139;">
+                                      <img src="asset/image/edit.svg" style="height: 18px;">Tambah Catatan</img>
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 mt-lg-2 mt-sm-2">
+                                  <div class="row">
+  
+                                    <span class="d-flex">
+                                      <i data-feather="trash-2" class="mt-1 me-2"></i>
+                                      <input type="number" value="1" min="0" max="100" step="1" style="width: 10px"/>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+  
+                <tr>
+                  <th scope="col">
+                    <div>
+                      <input
+                        class="form-check-input fw-light"
+                        type="checkbox"
+                        id="checkboxNoLabel"
+                        value=""
+                        aria-label="..."
+                      />
+                    </div>
+                  </th>
+                  <th scope="col">
+                    <div class="row justify-content-center mb-3">
+                      <div class="col-md-12 col-xl-10">
+                        <div class="card-atas shadow-0 border-0 rounded-5">
+                          <div class="card-body">
+                            <div class="row">
+                              <div
+                                class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0"
+                              >
+                                <div
+                                  class="bg-image hover-zoom ripple rounded ripple-surface"
+                                >
+                                  <img
+                                    src="asset/image/nasgor.png"
+                                    class="w-100"
+                                  />
+                                  <a href="#!">
+                                    <div class="hover-overlay">
+                                      <div
+                                        class="mask"
+                                        style="
+                                          background-color: rgba(
+                                            253,
+                                            253,
+                                            253,
+                                            0.15
+                                          );
+                                        "
+                                      ></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+  
+                              <div class="col-md col-lg col-xl">
+                                <h2 class="fw-bold">Nasi Lele Goreng</h2>
+  
+                                <p class="mb-4 mb-md-0 fw-lighter fs-6">
+                                  Lobortis mauris tempus nibh lacus duis amet.
+                                  Velit donec tellus id dui et urna, laoreet.
+                                  Potenti quis Lobortis mauris tempus nibh lacus
+                                  duis amet.
+                                </p>
+                                <div class="d-flex flex-row mt-2">
+                                  <img
+                                    src="asset/image/start.png"
+                                    alt=""
+                                    style="width: 30%;"
+                                  />
+                                </div>
+                                <h4 class="fw-bold">Rp 15.000</h4>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-floating">
+                                    <textarea
+                                      class="form-control"
+                                      placeholder="Leave a comment here"
+                                      id="floatingTextarea"
+                                      style="border: none; height: 100px; width: fit-content;"
+                                    ></textarea>
+                                    <label for="floatingTextarea" style="color: #A90139;">
+                                      <img src="asset/image/edit.svg" style="height: 18px;">Tambah Catatan</img>
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 mt-lg-2 mt-sm-2">
+                                  <div class="row">
+  
+                                    <span class="d-flex">
+                                      <i data-feather="trash-2" class="mt-1 me-2"></i>
+                                      <input type="number" value="1" min="0" max="100" step="1" style="width: 10px"/>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-4">
+            <div
+                      class="col border-1 card"
+                      style="
+                        border-radius: 15px;
+                        padding: 1em;
+                      "
+                    >
+                      <p class="py-3 fw-bold">
+                        Keranjang
+                      </p>
+                     
+                      <p class="fw-light fs-6">
+                        Total barang (2 Menu)
+                      </p><p class="fw-light fs-6">
+                        Total diskon barang
+                      </p>
+
+                      <hr class="border border-1 border-black">
+                      <span class="position-relative">
+                        <p class="fw-semibold" style="color: #777777;">Total Harga</p>
+                        <p class=" fw-bold position-absolute top-50 end-0 translate-middle-y">Rp 593.633</p>
+                      </span>
+  
+                      <div >
+                        <a href="../transaksi/pembelian.html" class="d-flex flex-column mt-4">
+
+                          <button class="btn btn-danger"  type="button">
+                            Beli (2)
+                          </button>
+                        </a>
+                        
+                      </div>
+                    </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end menu -->
+
+    <!-- footer -->
+    <footer class="page-footer font-small blue" id="footer">
+      <div class="container text-md-left">
+        <div class="row">
+          <div class="col-md-6 mt-md-0 mt-3 address mb-5">
+            <img src="asset/image/logo.png" alt="logo" class="img-fluid mb-5" />
+            <p class="isi1">
+              Lobortis mauris tempus nibh lacus duis amet. Velit donec tellus id
+              dui et urna, laoreet. Potenti quis
+            </p>
+            <div class="mt-md-5 social-media">
+              <a href="#">
+                <img
+                  src="asset/image/instagram.png"
+                  alt="linkedin"
+                  class="img-fluid"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="asset/image/facebook.png"
+                  alt="facebook"
+                  class="img-fluid"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="asset/image/twiter.png"
+                  alt="twitter"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="row col-md-6 nav-footer" style="border: 1px black;">
+            <div class="col-md-4 mb-md-0 mb-3">
+              <p>
+                Informasi
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-3">
+              <p>
+                Bantuan
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-3">
+              <p>
+                Menu Lainya
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+                <li>
+                  <a href="#!">Lobortis mauris</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end footer -->
+
+     <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      feather.replace()
+    </script>
+    <script src="asset/style/main.js" type="text/javascript"></script>
+    <script src="node_modules/bootstrap-input-spinner/src/bootstrap-input-spinner.js" type="text/javascript"
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" crossorigin="anonymous">
+      $("input[type='number']").inputSpinner()
+    </script>
+    s
+  </body>
+</html>
